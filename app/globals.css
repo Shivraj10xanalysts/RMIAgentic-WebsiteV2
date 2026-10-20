@@ -558,15 +558,8 @@ summary{transition:color .2s}
 summary:hover{color:var(--frame-color)}
 
 @media (prefers-reduced-motion: no-preference){
-  /* hero: slow drifting glow and grid */
-  .glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
-    background:radial-gradient(40% 55% at 88% 8%,rgba(124,112,255,.16),transparent 70%),radial-gradient(38% 50% at 6% 100%,rgba(91,79,230,.10),transparent 70%);
-    animation:glowShift 14s ease-in-out infinite alternate}
-  .glass::before{animation:gridDrift 28s linear infinite}
   .route-fade{animation:routeIn .5s ease both}
 }
-@keyframes glowShift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-2%,3%,0) scale(1.06)}}
-@keyframes gridDrift{to{background-position:15px 15px}}
 @keyframes routeIn{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.progress{display:none}}
 

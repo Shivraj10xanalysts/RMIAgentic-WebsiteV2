@@ -15,6 +15,7 @@ export default function Product() {
   return (
     <>
       <section className="sec" id="product">
+        <h1 className="sr-only">Product</h1>
         <div className="fx fx-insure fx-first fx-top">
           <Reveal>
             <p className="lab lab-big"><i aria-hidden="true" />Product</p>

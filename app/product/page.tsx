@@ -14,7 +14,7 @@ const Q = ({ q, children }: { q: string; children: React.ReactNode }) => (
 export default function Product() {
   return (
     <>
-      <section className="sec" id="product">
+      <section className="sec product-page" id="product">
         <h1 className="sr-only">Product</h1>
         <div className="fx fx-insure fx-first fx-top">
           <Reveal>
